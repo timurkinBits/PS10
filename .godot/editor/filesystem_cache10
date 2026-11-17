@@ -1,0 +1,11 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1794882212
+data.gd::GDScript/GDScript::8479330565970843680::1794746043::0::1::::<>RefCounted<><>0<>0<><>::
+icon.svg::CompressedTexture2D/CompressedTexture2D::6034274383787143887::1794745363::1794745374::1::::<><><>0<>0<>af24aa404697e57b2183efa6f30ba36c<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+main.gd::GDScript/GDScript::3529991000962271452::1794747936::0::1::::<>Control<><>0<>0<><>::
+main.tscn::PackedScene::4045711088753285627::1794882213::0::1::::<><><>0<>0<><>::uid://bqj7o3coiskkq::::res://main.gd
+part_grid.gd::GDScript/GDScript::6180868883443841955::1794747942::0::1::::<>GridContainer<><>0<>0<><>::
+race.gd::GDScript/GDScript::2092592499850484596::1794746043::0::1::::<>RefCounted<><>0<>0<><>::
+robot.gd::GDScript/GDScript::3246779655895865018::1794746043::0::1::::<>RefCounted<><>0<>0<><>::
+track_view.gd::GDScript/GDScript::6269330442685900383::1794747947::0::1::::<>Control<><>0<>0<><>::
+ui_style.gd::GDScript/GDScript::6279915252082619608::1794746043::0::1::::<>RefCounted<><>0<>0<><>::
