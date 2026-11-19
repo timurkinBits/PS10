@@ -37,7 +37,7 @@ func _draw() -> void:
 	for g in level["seg"]:
 		var seg_name: String = g["k"]
 		var L: float = float(g["L"])
-		var narrow: bool = seg_name == Data.NARROW
+		var narrow: bool = seg_name == Data.NARROW or seg_name == Data.LOW
 		var y: float = 46.0 if narrow else 32.0
 		var h: float = 30.0 if narrow else 58.0
 		draw_rect(Rect2(30.0 + s * k, y, L * k, h), Color.html(str(Data.TERRAIN_COLOR[seg_name])))

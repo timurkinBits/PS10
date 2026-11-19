@@ -18,4 +18,5 @@ static func build(level: Dictionary, wheel_i: int, armor_i: int, bat_i: int) -> 
 		"v": float(W["s"]) * 1500.0 / m,
 		"drain": m * Data.DRAIN,
 		"wide": int(W["w"]) > 1,
+		"tall": bool(A.get("tall", false)),
 	}

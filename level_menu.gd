@@ -2,6 +2,7 @@ extends Control
 ## Меню выбора уровней. Закрытые уровни недоступны, пока не пройден предыдущий.
 
 signal level_chosen(index: int)
+signal back_requested
 
 const Data = preload("res://data.gd")
 const Style = preload("res://ui_style.gd")
@@ -27,8 +28,15 @@ func _ready() -> void:
 	header.add_theme_stylebox_override("panel", Style.style(Color("#1f2937"), Color(0, 0, 0, 0), 0, 0, 8))
 	var hrow := HBoxContainer.new()
 	header.add_child(hrow)
+	hrow.add_theme_constant_override("separation", 12)
+	var back := Button.new()
+	back.text = "← Главное меню"
+	Style.main_button(back)
+	back.pressed.connect(func() -> void: back_requested.emit())
+	hrow.add_child(back)
 	var title := Style.lbl("Надёжность vs скорость  —  выбор уровня", 17, Color.WHITE, true)
 	title.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	title.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	hrow.add_child(title)
 	_total_lbl = Style.lbl("", 16, Color("#fbbf24"), true)
 	hrow.add_child(_total_lbl)
@@ -56,10 +64,23 @@ func _ready() -> void:
 	var footer := MarginContainer.new()
 	for side in ["left", "right", "top", "bottom"]:
 		footer.add_theme_constant_override("margin_" + side, 10)
+	var dialog := ConfirmationDialog.new()
+	dialog.title = "Сброс прогресса"
+	dialog.dialog_text = "Удалить все звёзды и закрыть уровни, кроме первого?\nЭто действие нельзя отменить."
+	dialog.ok_button_text = "Сбросить"
+	dialog.cancel_button_text = "Отмена"
+	dialog.confirmed.connect(_on_reset_pressed)
+	add_child(dialog)
+
 	var reset := Button.new()
 	reset.text = "Сбросить прогресс"
+	reset.flat = true
 	reset.size_flags_horizontal = Control.SIZE_SHRINK_END
-	reset.pressed.connect(_on_reset_pressed)
+	reset.add_theme_font_size_override("font_size", 12)
+	reset.add_theme_color_override("font_color", Data.C_GRAY)
+	reset.add_theme_color_override("font_hover_color", Color("#f87171"))
+	reset.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
+	reset.pressed.connect(func() -> void: dialog.popup_centered())
 	footer.add_child(reset)
 	root_v.add_child(footer)
 
