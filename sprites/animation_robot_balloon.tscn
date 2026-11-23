@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://botwwui4cmlm7"]
+
+[ext_resource type="Texture2D" uid="uid://bq3dt3c3hopoe" path="res://sprites/static_robot_balloon.png" id="1_56esu"]
+[ext_resource type="Texture2D" uid="uid://br5tv7gn3gqc" path="res://sprites/anim_robot_balloon1.png" id="2_sp170"]
+[ext_resource type="Texture2D" uid="uid://bdliyfs30i4ce" path="res://sprites/anim_robot_balloon2.png" id="3_04vwf"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j2i3d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_56esu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_sp170")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_04vwf")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="animation_robot_balloon" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_j2i3d")
+frame_progress = 0.476196

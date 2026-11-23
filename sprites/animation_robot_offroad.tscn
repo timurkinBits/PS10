@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://d4hoxjhrypitu"]
+
+[ext_resource type="Texture2D" uid="uid://esqd2cu5cq5i" path="res://sprites/static_robot_offroad.png" id="1_qsn2c"]
+[ext_resource type="Texture2D" uid="uid://cihjo3euvu0ke" path="res://sprites/anim_robot_offroad1.png" id="2_3hr2h"]
+[ext_resource type="Texture2D" uid="uid://b7kpuaa5fyxf0" path="res://sprites/anim_robot_offroad2.png" id="3_w7ma1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lke46"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_qsn2c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_3hr2h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_w7ma1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="animation_robot_offroad" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_lke46")
+frame_progress = 0.663983

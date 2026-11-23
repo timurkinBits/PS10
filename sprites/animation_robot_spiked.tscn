@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://wdt7i35r7bxe"]
+
+[ext_resource type="Texture2D" uid="uid://bij5r1s5ih87o" path="res://sprites/static_robot_spiked.png" id="1_3feh3"]
+[ext_resource type="Texture2D" uid="uid://2vhhnndeyvf" path="res://sprites/anim_robot_spiked1.png" id="2_1spdc"]
+[ext_resource type="Texture2D" uid="uid://x1t5rtgo5xoi" path="res://sprites/anim_robot_spiked2.png" id="3_1garo"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nplt4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_3feh3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_1spdc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_1garo")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="animation_robot_spiked" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_nplt4")
+frame_progress = 0.179301

@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://cb0k1feg3tyw2"]
+
+[ext_resource type="Texture2D" uid="uid://dgu8gndyqil4s" path="res://sprites/static_robot_racing.png" id="1_2al82"]
+[ext_resource type="Texture2D" uid="uid://c4ctb2qdmodj0" path="res://sprites/anim_robot_racing1.png" id="2_6yxyp"]
+[ext_resource type="Texture2D" uid="uid://drims25w1k2bx" path="res://sprites/anim_robot_racing2.png" id="3_bwl8u"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pa4av"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2al82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_6yxyp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_bwl8u")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="animation_robot_racing" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_pa4av")
+frame_progress = 0.391558

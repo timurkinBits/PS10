@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://d38lvuleeowsy"]
+
+[ext_resource type="Texture2D" uid="uid://coigmphatnkmp" path="res://sprites/static_robot_tracks.png" id="1_qvnv6"]
+[ext_resource type="Texture2D" uid="uid://pc35kuufjyb3" path="res://sprites/anim_robot_track1.png" id="2_00ye4"]
+[ext_resource type="Texture2D" uid="uid://gu10iugd4m7p" path="res://sprites/anim_robot_track2.png" id="3_yl5sa"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oy315"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_qvnv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_00ye4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_yl5sa")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="animation_robot_tracks" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_oy315")
+frame = 2
+frame_progress = 0.19849

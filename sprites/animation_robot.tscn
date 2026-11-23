@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://cngfhawmvbeb0"]
+
+[ext_resource type="Texture2D" uid="uid://csnmf6bayit1a" path="res://sprites/static_robot.png" id="1_gyovs"]
+[ext_resource type="Texture2D" uid="uid://q6wjtuxko4ss" path="res://sprites/anim_robot1.png" id="2_ughqh"]
+[ext_resource type="Texture2D" uid="uid://dd0tfg3ki27rb" path="res://sprites/anim_robot2.png" id="3_3auqo"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_272bh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_gyovs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ughqh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_3auqo")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="animation_robot" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_272bh")
+frame_progress = 0.807546
