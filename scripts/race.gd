@@ -55,16 +55,28 @@ func step(dt: float) -> void:
 		_finish("Застрял: робот слишком широкий для узкого прохода. Попробуйте колёса уже.", false)
 		return
 
+	if seg_name == Data.LOW and robot["tall"]:
+		_finish("Застрял: защита слишком высокая для низкого тоннеля. Попробуйте защиту пониже.", false)
+		return
+
 	var sp: float = float(robot["v"])
+	var drain_k := 1.0
 	if seg_name == Data.SAND:
 		sp *= float(W["sand"])
 	if seg_name == Data.ROCKS:
 		sp *= 0.7
+	if seg_name == Data.MUD:
+		sp *= float(W.get("mud", 0.5))
+	if seg_name == Data.ICE:
+		sp *= float(W.get("ice", 0.6))
+	if seg_name == Data.HILL:
+		sp *= Data.HILL_SLOW
+		drain_k = Data.HILL_DRAIN
 
 	var dx: float = minf(sp * dt, total - x)
 	x += dx
 	t += dx / sp
-	en -= dx / sp * float(robot["drain"])
+	en -= dx / sp * float(robot["drain"]) * drain_k
 	if seg_name == Data.ROCKS:
 		hp -= dx * Data.DMG * float(W["rock"])
 
