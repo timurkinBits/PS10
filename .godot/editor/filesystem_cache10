@@ -1,5 +1,4 @@
 ea4bc82a6ad023ab7ee23ee620429895
-<<<<<<< HEAD
 ::res://::1795443421
 icon.svg::CompressedTexture2D/CompressedTexture2D::6034274383787143887::1795013950::1795013994::1::::<><><>0<>0<>af24aa404697e57b2183efa6f30ba36c<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 main.tscn::PackedScene::4045711088753285627::1795443421::0::1::::<><><>0<>0<><>::uid://bqj7o3coiskkq::::res://scripts/main.gd
@@ -54,27 +53,3 @@ static_robot_tracks.png::CompressedTexture2D/CompressedTexture2D::57723867305243
 stones.png::CompressedTexture2D::6070082585275265763::1795442173::1795442247::1::::<><><>0<>0<>b8622b9e1eae5a0a6ff02caaef957eeb<>res://.godot/imported/stones.png-4337fe0aaa1025eea26d8b0dfa46d08a.ctex::
 ::res://tools/::1795013950
 check_levels.gd::GDScript/GDScript::8181160617910534209::1795013950::0::1::::<>SceneTree<><>0<>0<><>::
-=======
-::res://::1795060089
-data.gd::GDScript::8479330565970843680::1794885006::0::1::::<>RefCounted<><>0<>0<><>::
-icon.svg::CompressedTexture2D/CompressedTexture2D::6034274383787143887::1794745363::1794745374::1::::<><><>0<>0<>af24aa404697e57b2183efa6f30ba36c<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-level_menu.gd::GDScript::4494184960276139098::1794885081::0::1::::<>Control<><>0<>0<><>::
-level_screen.gd::GDScript::4391375689096018438::1794885089::0::1::::<>Control<><>0<>0<><>::
-main.gd::GDScript::3529991000962271452::1794883520::0::1::::<>Control<><>0<>0<><>::
-main.tscn::PackedScene::4045711088753285627::1794885233::0::1::::<><><>0<>0<><>::uid://bqj7o3coiskkq::::res://main.gd
-part_grid.gd::GDScript/GDScript::6180868883443841955::1794747942::0::1::::<>GridContainer<><>0<>0<><>::
-progress.gd::GDScript::1214523719844629958::1794885103::0::1::::<>RefCounted<><>0<>0<><>::
-race.gd::GDScript::2092592499850484596::1794883575::0::1::::<>RefCounted<><>0<>0<><>::
-robot.gd::GDScript::3246779655895865018::1794884160::0::1::::<>RefCounted<><>0<>0<><>::
-terrain.gd::GDScript::1978765817331773200::1794884986::0::1::::<>RefCounted<><>0<>0<><>::
-track_view.gd::GDScript::6269330442685900383::1794883584::0::1::::<>Control<><>0<>0<><>::
-ui_style.gd::GDScript/GDScript::6279915252082619608::1794746043::0::1::::<>RefCounted<><>0<>0<><>::
-::res://levels/::1794885231
-level_01.gd::GDScript::262737250313250402::1794885207::0::1::::<>RefCounted<><>0<>0<><>::
-level_02.gd::GDScript::8448127730281982555::1794885215::0::1::::<>RefCounted<><>0<>0<><>::
-level_03.gd::GDScript::6791978401183964096::1794885223::0::1::::<>RefCounted<><>0<>0<><>::
-level_04.gd::GDScript::1257364160354680400::1794885231::0::1::::<>RefCounted<><>0<>0<><>::
-parts.gd::GDScript::244832041464817992::1794884234::0::1::::<>RefCounted<><>0<>0<><>::
-::res://tools/::1794885117
-check_levels.gd::GDScript::8181160617910534209::1794885117::0::1::::<>SceneTree<><>0<>0<><>::
->>>>>>> 07879e6eb36f6985c96113f747d1c3109ae96d68

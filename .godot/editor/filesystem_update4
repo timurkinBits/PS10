@@ -1,17 +1,6 @@
 res://main.tscn
-<<<<<<< HEAD
 res://scripts/level_screen.gd
 res://scripts/track_view.gd
 res://sprites/animation_robot.tscn
 res://scripts/robot.gd
 res://scripts/level_menu.gd
-=======
-res://track_view.gd
-res://robot.gd
-res://race.gd
-res://data.gd
-res://main.gd
-res://level_menu.gd
-res://level_screen.gd
-res://main_menu.gd
->>>>>>> 07879e6eb36f6985c96113f747d1c3109ae96d68

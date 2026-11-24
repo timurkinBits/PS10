@@ -7,8 +7,6 @@ const LEVEL_SCRIPTS := [
 	"res://levels/level_02.gd",
 	"res://levels/level_03.gd",
 	"res://levels/level_04.gd",
-	"res://levels/level_05.gd",
-	"res://levels/level_06.gd",
 ]
 
 # Ленивая загрузка: уровни читаются через load(), а не через preload и не через
@@ -26,26 +24,16 @@ static func levels() -> Array:
 const DRAIN := 0.045      # расход энергии на кг массы
 const DMG := 0.5          # урон на камнях
 const TIME_SCALE := 3.0   # ускорение симуляции (как в оригинале)
-const HILL_SLOW := 0.8    # множитель скорости на подъёме
-const HILL_DRAIN := 1.5   # во сколько раз быстрее расходуется энергия на подъёме
 
 const ASPHALT := "Асфальт"
 const SAND := "Песок"
 const ROCKS := "Камни"
 const NARROW := "Узкий проход"
-const MUD := "Грязь"
-const HILL := "Подъём"
-const ICE := "Лёд"
-const LOW := "Низкий тоннель"
 const TERRAIN_COLOR := {
 	ASPHALT: "#6b7280",
 	SAND: "#fbbf24",
 	ROCKS: "#78716c",
 	NARROW: "#1f2937",
-	MUD: "#7c4a21",
-	HILL: "#4d7c0f",
-	ICE: "#7dd3fc",
-	LOW: "#4b5563",
 }
 
 const C_BG := Color("#f3f4f6")

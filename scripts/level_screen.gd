@@ -228,7 +228,7 @@ func _build_track_box() -> Control:
 
 	# появляется после успешного прохождения, если есть следующий уровень
 	next_btn = Button.new()
-	next_btn.text = "Следующий уровень →" if level_index + 1 < Data.levels().size() else "Завершить игру →"
+	next_btn.text = "Следующий уровень →"
 	Style.main_button(next_btn)
 	next_btn.size_flags_vertical = Control.SIZE_SHRINK_CENTER
 	next_btn.visible = false
@@ -310,4 +310,4 @@ func _process(delta: float) -> void:
 		if race.success:
 			Progress.set_stars(level_index, race.stars)
 			_update_best()
-			next_btn.visible = true
+			next_btn.visible = level_index + 1 < Data.levels().size()
